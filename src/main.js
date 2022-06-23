@@ -1,4 +1,4 @@
-import {showFilms} from './data.js';
+import {showFilms, sortBy} from './data.js';
 import data from './data/ghibli/ghibli.js';
 // console.log(films, data);
 
@@ -8,13 +8,10 @@ import data from './data/ghibli/ghibli.js';
 // .then(data=>{
 //   dataFilms = data.films;
 
-
 // Jalando todo los links de los posters de la data
 // const posters = dataFilms.map(dataFilms => (dataFilms.poster));
 
 showFilms(data.films)
-
-
 
 let linkPeliculas = document.getElementById("linkPeliculas")
 let linkInicio = document.getElementById("linkInicio")
@@ -31,3 +28,5 @@ linkInicio.addEventListener('click', () => {
     home.style.display = "inline";
     films1.style.display = "block";
 })
+
+sortBy(data.films)

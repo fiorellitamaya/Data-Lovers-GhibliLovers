@@ -5,7 +5,7 @@ export function showFilms(dataFilms) {
     })
 }
 
-export function getFilmDiv(film) {
+export function getFilmDiv(film) { //<--- Creando divs para las peliculas
   return `<div class="card">
       <img src="${film.poster}" alt="imagen">
       <img id="star" src="images/estrellita.png">
@@ -14,3 +14,10 @@ export function getFilmDiv(film) {
       <p>${film.release_date}</p>
       </div>`
  }
+
+ export function sortBy(dataFilms){
+  const popularity = dataFilms.sort(function(a,b) {
+  return b.rt_score - a.rt_score
+    });
+ }
+ console.log(sortBy)
