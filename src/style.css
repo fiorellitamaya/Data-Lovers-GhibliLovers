@@ -117,6 +117,10 @@ h1
     margin: 80px 5px 5px 30px;
     border-radius: 20px;
     float: left;
+   
+}
+ul{
+    list-style: none;
 }
 
 .peliculas h2{
@@ -130,6 +134,7 @@ h3{
     font-size: 33px;
     font-family: 'Indie Flower';
 }    
+
 
 .posters{
     /* background-color:mediumvioletred; */
