@@ -16,13 +16,38 @@ export function getFilmDiv(film) { //<--- Creando divs para las peliculas
       </div>`
  }
 
+ export function sortBy (films) {
+  return films.sort(function(a,b){
+    return b.rt_score - a.rt_score
+  })
+ }
+
  export function sortAz (films) {
+  return films.sort((a,b) => {
+    if (a.title > b.title) {return 1}
+    if (a.title < b.title) {return -1}
+    return 0;
+  });
+ }
+
+ export function sortZa (films) {
   return films.sort((a,b) => {
     if (a.title > b.title) {return -1}
     if (a.title < b.title) {return 1}
     return 0;
-
   });
+ }
+
+ export function sortLessOld (films) {
+  return films.sort(function(a,b){
+    return b.release_date - a.release_date
+  })
+ }
+ 
+ export function sortOldest (films) {
+  return films.sort(function(a,b){
+    return a.release_date - b.release_date
+  })
  }
 
  
