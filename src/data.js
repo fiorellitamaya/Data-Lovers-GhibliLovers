@@ -1,8 +1,9 @@
 export function showFilms(dataFilms) {
   const filmCards = document.getElementById("filmCards") //<-- Llamando al contenedor de html
-    dataFilms.forEach(film => {
-        filmCards.innerHTML+= getFilmDiv(film)
-    })
+  filmCards.innerHTML='';
+  dataFilms.forEach(film => {
+    filmCards.innerHTML+= getFilmDiv(film)
+  })
 }
 
 export function getFilmDiv(film) { //<--- Creando divs para las peliculas
@@ -15,9 +16,14 @@ export function getFilmDiv(film) { //<--- Creando divs para las peliculas
       </div>`
  }
 
- export function sortBy(dataFilms){
-  const popularity = dataFilms.sort(function(a,b) {
-  return b.rt_score - a.rt_score
-    });
+ export function sortAz (films) {
+  return films.sort((a,b) => {
+    if (a.title > b.title) {return -1}
+    if (a.title < b.title) {return 1}
+    return 0;
+
+  });
  }
- console.log(sortBy)
+
+ 
+ 
