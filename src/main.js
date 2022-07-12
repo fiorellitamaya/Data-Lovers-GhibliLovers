@@ -119,8 +119,6 @@ function modal(dataFilms) {
     })
 }
 
-
-
 function showCharacters(dataPeople, modal) {        //------> Funcion para mostrar los personajes
     const character = modal.querySelector(".charactersCards")
     dataPeople.forEach(people => {
@@ -225,7 +223,6 @@ const dataFilms = data.films
 
 let titleFilms = top10Films(dataFilms)
 //let scores = top10Films.map((x)=> x.rt_score);
-
 const colors = ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'orange', '#C32BAD', '#7027A0', '#6ECB63', '#3A6351', '#1E3163', '#C84B31'];
 const ctx = document.getElementById("myChart").getContext("2d");
 // eslint-disable-next-line

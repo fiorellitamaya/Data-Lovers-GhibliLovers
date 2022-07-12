@@ -115,11 +115,6 @@ button {
     margin: 0 20px 0 20px;
 }
 
-.peliculas {
-    width: auto;
-    margin: 0 auto;
-}
-
 .peliculas nav {
     font-size: 18px;
     line-height: 24px;
@@ -234,7 +229,6 @@ h3 {
 }
 
 .modalContainer {
-    /* visibility: hidden; */
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -322,9 +316,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    perspective: 1000px;
- /* padding: 2%; */
-    
 }
 
 .flipCard{
@@ -410,7 +401,6 @@ footer {
         top: 60px;
         left: 100%;
         transition: left 0.3s;
-        
     }
 
     nav {
