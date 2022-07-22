@@ -289,6 +289,9 @@ h3 {
     text-align: center;
 }
 
+.ventanamodal h3 {
+    margin: 30px 0px 8px 0px;
+}
 .ventanamodal p {
     font-family: 'Comic Neue';
     font-size: 18px;
