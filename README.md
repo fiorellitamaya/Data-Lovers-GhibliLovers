@@ -82,8 +82,8 @@ Para: Saber cuales son las 10 peliculas mas populares
 ## 4. Prototipos 🚀
 
 ### Prototipo de baja fidelidad
-![Imagen2](src/images/Prototipo%20I.jpg)
-![Imagen3](src/images/Prototipo%20II.jpg)
+<img src="src/images/Prototipo%20I.jpg" width="300"/>
+<img src="src/images/Prototipo%20II.jpg" width="300"/>
 
 ### Prototipo de alta fidelidad
 ![Imagen4](src/images/Prototipo%20Ghibli%20lovers.PNG)
